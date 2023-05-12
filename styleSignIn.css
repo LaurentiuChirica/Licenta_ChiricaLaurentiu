@@ -1,0 +1,79 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-content-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signIn-container {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 40%;
+    border: 3px solid #f1f1f1;
+    border-radius: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.logInButton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%; 
+    border-radius: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.logInButton:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.goToSignUp {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+  }
+
+@media screen and (max-width: 600px) {
+    .signIn-container {
+        width: 85%;
+    }
+}
+  
