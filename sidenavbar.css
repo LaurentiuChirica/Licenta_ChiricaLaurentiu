@@ -1,11 +1,14 @@
 .navigation {
-    width: 160px;
-    overflow-y: scroll;
+  position: sticky;
+  top: 0;
+  width: 160px;
+  overflow-y: scroll;
   border-right: 1px solid #000000;
 }
-  
+
 /* reset our lists to remove bullet points and padding */
-.mainmenu, .submenu {
+.mainmenu,
+.submenu {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -27,7 +30,7 @@
 }
 
 .mainmenu a:hover {
-    background-color: #C5C5C5;
+  background-color: #c5c5c5;
 }
 
 .mainmenu li:hover .submenu {
@@ -53,5 +56,3 @@
   max-height: 0;
   -webkit-transition: all 0.5s ease-out;
 }
-  
-  
