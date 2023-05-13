@@ -7,9 +7,13 @@
             [
                 'label' => 'Home',
                 'url' => 'tut_PHP.php'
+            ], 
+            [
+                'label' => 'Introducere',
+                'url' => 'introducere.php'
             ],
             [
-                'label' => 'Products',
+                'label' => 'Products',     
                 'url' => '#',
                 'sub_menu' => [
                     [

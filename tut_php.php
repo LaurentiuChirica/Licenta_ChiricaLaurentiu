@@ -26,7 +26,7 @@
 
             <div class="info-container">
 
-                <div class="first-content-box">
+                <div class="content-box">
                     <h1>Invata PHP</h1>
                     
                     <hr>
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="code-example">
-                    <h2>Exemplu de cod compilator facut local</h2>
+                    <h2>Exemplu de cod in PHP</h2>
 			        <?php include('live_compiler.php'); ?>
                     
                 </div>
