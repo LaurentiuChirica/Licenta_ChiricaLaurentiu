@@ -17,7 +17,13 @@
     padding: 1.25rem;
 }
 
-.separation-line {
-    border:0;
-    border-top: 1px solid #eee;
+.info-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 20px 0px 20px 0px
+}
+
+.info-content {
+    font-size: 1rem;
 }
