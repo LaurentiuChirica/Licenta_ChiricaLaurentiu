@@ -10,7 +10,6 @@
 <?php
 	include ("header.php");
 	
-	// echo "\n\t<!-- main -->\n\t<div id=\"main\">\n\t <div id=\"content2\">\n\t  <div id=\"text2\">\n\t  <h1>Tutoriale PHP</h1>\n\t  <br />";
 	echo "\n\t";
 ?>
 <body>
@@ -102,7 +101,6 @@
 </body>
 
 <?php	
-	// echo "\n\t</ul></div></div><div id=\"push\"></div></div>"; 
 
 	include ("footer.php");
 ?>
