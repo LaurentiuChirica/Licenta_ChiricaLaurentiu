@@ -6,7 +6,7 @@
         $menu_items = [
             [
                 'label' => 'Home',
-                'url' => '/'
+                'url' => 'tut_PHP.php'
             ],
             [
                 'label' => 'Products',
