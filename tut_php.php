@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <title>AI - Aplicatii Internet</title>
-    <link href="tut_php.css" rel="stylesheet" />
+    <link href="reusable_tut_php.css" rel="stylesheet" />
 </head>
 
 <?php
@@ -24,10 +24,13 @@
         <div class="main-content-container">
             <div class="presentation-title">Prezentare Generala a PHP</div>
 
-            <div class="first-container">
+            <div class="info-container">
 
                 <div class="first-content-box">
-                    <h3>Invata PHP</h3>
+                    <h1>Invata PHP</h1>
+                    
+                    <hr class="separation-line">
+
                     <span>
                         PHP este un limbaj de scripting pentru server și un instrument puternic pentru crearea de pagini web dinamice și interactive.
                     </span>
@@ -96,7 +99,7 @@
 </body>
 
 <?php	
-	echo "\n\t</ul></div></div><div id=\"push\"></div></div>"; 
+	// echo "\n\t</ul></div></div><div id=\"push\"></div></div>"; 
 
 	include ("footer.php");
 ?>

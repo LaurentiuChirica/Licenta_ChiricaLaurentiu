@@ -1,9 +1,14 @@
 .navigation {
     width: 160px;
-  }
+    overflow-y: scroll;
+  border-right: 1px solid #000000;
+}
   
 /* reset our lists to remove bullet points and padding */
 .mainmenu, .submenu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -11,10 +16,13 @@
 
 /* make ALL links (main and submenu) have padding and background color */
 .mainmenu a {
-  display: block;
-  background-color: #CCC;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: 0.975rem;
   text-decoration: none;
   padding: 10px;
+  height: 30px;
   color: #000;
 }
 
@@ -28,14 +36,19 @@
 }
 
 .submenu a {
-  background-color: #999;
+  background-color: #dbdbdb;
+  padding-left: 1.25rem;
+  font-size: 0.925rem;
 }
 
 .submenu a:hover {
-  background-color: #666;
+  background-color: #c3c1c1;
 }
 
 .submenu {
+  display: flex;
+  height: 100%;
+  gap: 0.875rem;
   overflow: hidden;
   max-height: 0;
   -webkit-transition: all 0.5s ease-out;
