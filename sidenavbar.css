@@ -56,3 +56,7 @@
   max-height: 0;
   -webkit-transition: all 0.5s ease-out;
 }
+
+.active-item {
+  background-color: #c5c5c5 !important;
+}

@@ -40,3 +40,32 @@ body {
     line-height: 1.8;
     font-size: 1rem;
 }
+
+.tutorial-images {
+  width: 25%;
+  height: 25%;
+}
+
+.code-elements {
+  color: rgb(255, 0, 0);
+  background-color: #cfcfcf;
+  padding: 0px 3px 0px 3px;
+}
+
+.static-code-example {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  width: 98%;
+  border: 1px solid #b9b9b9;
+  background-color: #8787874d;
+}
+
+.php-syntax-example {
+  color: #4112fbe6;
+  font-size: 0.875rem;
+}
+
+.php-syntax-code {
+  font-size: 0.875rem;
+}

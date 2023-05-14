@@ -13,6 +13,18 @@
                 'url' => 'introducere.php'
             ],
             [
+                'label' => 'Instalare PHP',
+                'url' => 'installPHP.php'
+            ],
+            [
+                'label' => 'Sintaxa',
+                'url' => 'syntax.php'
+            ],
+            [
+                'label' => 'Comentarii',
+                'url' => 'comments.php'
+            ],
+            [
                 'label' => 'Products',     
                 'url' => '#',
                 'sub_menu' => [
@@ -245,10 +257,16 @@
                 'url' => '/contact'
             ],
         ];
-
+        $current_url = $_SERVER['REQUEST_URI'];
+        $current_url_substring = substr($current_url, 1);
+        
         foreach ($menu_items as $item) {
             echo '<li>';
-            echo '<a class href="' . $item['url'] . '">' . $item['label'] . '</a>';
+            if( $current_url_substring == $item['url']) {
+                echo '<a class="active-item" href="' . $item['url'] . '">' . $item['label'] . '</a>';
+            } else {
+                echo '<a class href="' . $item['url'] . '">' . $item['label'] . '</a>';
+            }
             if (isset($item['sub_menu'])) {
                 echo '<ul class="submenu">';
                 foreach ($item['sub_menu'] as $sub_item) {
