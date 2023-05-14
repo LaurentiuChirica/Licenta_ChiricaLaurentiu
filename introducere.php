@@ -73,11 +73,6 @@
                     </div>
                     <hr>
                 </div>
-
-                <div class="code-example">
-                    <h2>Exemplu de cod in PHP</h2>
-			        <?php include('live_compiler.php'); ?>
-                </div>
             </div>
 
             <div class="info-container">
@@ -140,7 +135,6 @@
                     </li>
 
                 </div>
-                <hr>
             </div>
             </div>
         </div>

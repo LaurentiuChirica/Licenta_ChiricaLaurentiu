@@ -8,7 +8,7 @@
         ob_end_clean();
     } else {
         // dacă nu s-a trimis un formular, utilizați valoarea implicită
-        $cod = "<?php echo 'Primul meu cod scris in php' ?>";
+        $cod = "<?php echo 'Primul meu script scris in PHP'; ?>";
     }
 ?>
 
