@@ -21,6 +21,10 @@
         <div class="main-content-container">
             <div class="presentation-title">Prezentare Generala a PHP</div>
 
+            <div class="next-previous-buttons-container" id="first-page">
+              <?php include ("next_previous_buttons.php"); ?>
+            </div>
+
             <div class="info-container">
 
                 <div class="content-box">

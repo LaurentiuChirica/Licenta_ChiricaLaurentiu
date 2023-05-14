@@ -23,7 +23,11 @@
 
         <div class="main-content-container">
             <div class="presentation-title">Introducere</div>
-
+            
+            <div class="next-previous-buttons-container">
+              <?php include ("next_previous_buttons.php"); ?>
+            </div>
+            
             <div class="info-container">
 
                 <div class="content-box">

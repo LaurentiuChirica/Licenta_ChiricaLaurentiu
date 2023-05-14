@@ -21,6 +21,10 @@
         <div class="main-content-container">
             <div class="presentation-title">Instalare PHP</div>
 
+            <div class="next-previous-buttons-container">
+              <?php include ("next_previous_buttons.php"); ?>
+            </div>
+            
             <div class="info-container">
               <p class="info-content">
                 Puteți crea și testa în siguranță aplicații web folosind PHP pe PC-ul dumneavoastră, fără a afecta sistemul live.

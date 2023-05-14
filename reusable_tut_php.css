@@ -69,3 +69,14 @@ body {
 .php-syntax-code {
   font-size: 0.875rem;
 }
+
+.next-previous-buttons-container {
+  display: flex;
+  padding: 15px 15px 0px 15px;
+
+  justify-content: space-between
+}
+
+#first-page {
+  justify-content: flex-end !important;
+}

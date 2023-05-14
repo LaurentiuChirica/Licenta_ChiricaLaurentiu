@@ -15,14 +15,17 @@
 <body>
     <div class="main-content">
       <div class="side-navbar-container">
-			<?php include('sidenavbar.php'); ?>
-        </div>
+			  <?php include('sidenavbar.php'); ?>
+      </div>
 
-        <div class="main-content-container">
+      <div class="main-content-container">
             <div class="presentation-title">Sintaxa PHP</div>
 
-            <div class="info-container">
+            <div class="next-previous-buttons-container">
+              <?php include ("next_previous_buttons.php"); ?>
+            </div>
 
+            <div class="info-container">
                 <div class="content-box">
                     <div class="info-content-container">
                         <p class="info-content">
