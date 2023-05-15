@@ -106,25 +106,17 @@
                         </div>
 
                       <p class="info-content">Notă: Instrucțiunile PHP se termină cu punct și virgulă (;).</p>
-
-                      <div class="code-example">
-                          <h1>Exemplu de cod in PHP</h1>
-                          <?php include('live_compiler.php'); ?>
-                      </div>
                     </div>
 
+                    <hr>
+                    
                     <div class="info-content-container">
-                      <h2>Sensibilitatea la majuscule și minuscule în PHP</h2>
-                      
-                      <p class="info-content">Clasele, funcțiile definite de utilizator și cuvintele cheie (cum ar fi  <code class="code-elements">echo</code>,  <code class="code-elements">if</code>,  <code class="code-elements">else</code> și  <code class="code-elements">while</code>) nu fac distincție între majuscule și minuscule în PHP. Cu toate acestea, majusculele contează atunci când vine vorba de numele variabilelor.</p>
-
-                      <p class="info-content">Puteți vedea că toate cele trei declarații echo sunt egale și corecte în exemplul de mai jos:</p>
-
+                      <h2>Putem exclude porțiuni din cod prin utilizarea comentariilor:</h2>
                       
                       <div data-pym-src='https://www.jdoodle.com/plugin' data-language="php"><span><</span>?php
-  echo "Hello world using echo </br>"; <br> 
-  ECHO "Hello world using ECHO </br>";  <br>
-  EcHo "Hello world using EcHo </br>";  <br>
+  $x = 5;
+  $y = 5;
+  echo $x + /* + 15 */ + $y;
 ?>
 </div>
                       <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>

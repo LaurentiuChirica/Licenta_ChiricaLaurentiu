@@ -19,7 +19,7 @@
                 echo '<ul class="submenu">';
                 foreach ($item['sub_menu'] as $sub_item) {
                     echo '<li>';
-                    echo '<a "href="' . $sub_item['url'] . '">' . $sub_item['label'] . '</a>';
+                    echo '<a href="' . $sub_item['url'] . '">' . $sub_item['label'] . '</a>';
                     echo '</li>';
                 }
                 echo '</ul>';
