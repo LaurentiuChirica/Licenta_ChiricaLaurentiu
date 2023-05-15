@@ -10,15 +10,25 @@
     ],
     [
         'label' => 'Instalare PHP',
-        'url' => 'installPHP.php'
+        'url' => 'instalarePHP.php'
     ],
     [
         'label' => 'Sintaxa',
-        'url' => 'syntax.php'
+        'url' => 'sintaxa.php'
     ],
     [
         'label' => 'Comentarii',
-        'url' => 'comments.php'
+        'url' => 'comentarii.php'
+    ],
+    [
+        'label' => 'Variabile',
+        'url' => 'variabile.php',
+        'sub_menu' => [
+            [
+                'label' => 'Domeniul variabilelor PHP',
+                'url' => 'domeniulVariabilelor.php'
+            ]
+        ]
     ],
     [
         'label' => 'Products',     
