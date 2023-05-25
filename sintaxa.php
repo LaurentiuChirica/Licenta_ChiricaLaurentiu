@@ -69,11 +69,6 @@
                         </div>
 
                       <p class="info-content">Notă: Instrucțiunile PHP se termină cu punct și virgulă (;).</p>
-
-                      <div class="code-example">
-                          <h1>Exemplu de cod in PHP</h1>
-                          <?php include('live_compiler.php'); ?>
-                      </div>
                     </div>
 
                     <div class="info-content-container">

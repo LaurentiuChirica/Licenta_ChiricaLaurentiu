@@ -23,16 +23,10 @@
     [
         'label' => 'Variabile',
         'url' => 'variabile.php',
-        'sub_menu' => [
-            [
-                'label' => 'Domeniul variabilelor PHP',
-                'url' => 'domeniulVariabilelor.php'
-            ]
-        ]
     ],
     [
         'label' => 'Products',     
-        'url' => '#',
+        'url' => 'introducere.php',
         'sub_menu' => [
             [
                 'label' => 'Product 1',

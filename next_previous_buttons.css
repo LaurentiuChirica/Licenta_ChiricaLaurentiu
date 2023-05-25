@@ -1,4 +1,6 @@
 .next-previous-button {
+  display: flex;
+  align-items: center;
   text-decoration: none; 
   border: 1px solid black;
   padding: 8px;
@@ -8,7 +10,19 @@
   font-size: 0.75rem;
 }
 
-
 .next-previous-button:hover {
   background-color: rgb(50 45 45);
+}
+
+.left-arrow {
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+}
+
+.right-arrow {
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
+  transform: rotate(180deg);
 }

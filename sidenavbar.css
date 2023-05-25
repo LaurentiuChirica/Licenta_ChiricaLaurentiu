@@ -6,7 +6,7 @@
   border-right: 1px solid #000000;
 }
 
-/* reset our lists to remove bullet points and padding */
+/* elimina punctele de bullet și padding */
 .mainmenu,
 .submenu {
   display: flex;
@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-/* make ALL links (main and submenu) have padding and background color */
+/* faceți ca TOATE link-urile (principale și submeniu) să aibă padding și colo de fundal */
 .mainmenu a {
   display: flex;
   align-items: center;

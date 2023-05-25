@@ -45,7 +45,7 @@
                         
                         <li class="info-content">
                             PHP este acronimul de la Hypertext Preprocessor.
-                        </li class="info-content">
+                        </li>
 
                         <li class="info-content">
                             PHP este un limbaj interpretat, adică nu este nevoie de compilare.
@@ -105,50 +105,15 @@
                         <li class="info-content">
                             PHP este ușor de învățat și rulează eficient pe partea de server
                         </li>
-
                     </div>
                     <hr>
                 </div>
             </div>
-
-            <div class="info-container">
-
-            <div class="content-box">
-                
-                <div class="info-content-container">
-                    <h1>De ce PHP?</h1>
-
-                    <li class="info-content">
-                        PHP rulează pe diverse platforme (Windows, Linux, Unix, Mac OS X, etc.)
-                    </li class="info-content">
-
-                    <li class="info-content">
-                        PHP este compatibil cu aproape toate serverele utilizate în prezent (Apache, IIS etc.)
-                    </li>
-
-                    <li class="info-content">
-                        PHP este compatibil cu o gamă largă de baze de date
-                    </li>
-
-                    <li class="info-content">
-                        PHP este gratuit. Descărcați-l de la resursa oficială PHP: <a href="www.php.net">www.php.net</a>
-                    </li>
-
-                    <li class="info-content">
-                        PHP este ușor de învățat și rulează eficient pe partea de server
-                    </li>
-
-                </div>
-            </div>
-            </div>
         </div>
-
     </div>
 </body>
 
 <?php	
-	// echo "\n\t</ul></div></div><div id=\"push\"></div></div>"; 
-
 	include ("footer.php");
 ?>
 </html>

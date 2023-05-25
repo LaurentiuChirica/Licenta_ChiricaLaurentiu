@@ -9,7 +9,6 @@
 
 <?php
 	include ("header.php");
-	
 	echo "\n\t";
 ?>
 <body>
@@ -96,7 +95,11 @@
 
                 <div class="code-example">
                     <h1>Exemplu de cod in PHP</h1>
-			              <?php include('live_compiler.php'); ?>
+                          <div data-pym-src='https://www.jdoodle.com/plugin' data-language="php"><span><</span>?php
+echo 'Primul meu script in PHP'
+?>
+</div>
+                      <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
                 </div>
             </div>
         </div>
@@ -105,7 +108,6 @@
 </body>
 
 <?php	
-
 	include ("footer.php");
 ?>
 </html>

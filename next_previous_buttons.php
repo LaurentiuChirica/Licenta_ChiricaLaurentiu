@@ -23,10 +23,10 @@
   }
 
   if ($prev_page != null) {
-    echo '<a class="next-previous-button" href="' . $prev_page['url'] . '">' . $previous . '</a>';
+    echo '<a class="next-previous-button" href="' . $prev_page['url'] . '"><img class="left-arrow" src="images/next-previous-arrow.png">' . $prev_page['label'] . '</a>';
   }
 
   if ($next_page) {
-    echo '<a class="next-previous-button" href="' . $next_page['url'] . '">' . $next . '</a>';
+    echo '<a class="next-previous-button" href="' . $next_page['url'] . '">' . $next_page['label'] . '<img class="right-arrow" src="images/next-previous-arrow.png"></a>';
   }
 ?>
