@@ -1,7 +1,7 @@
 .navigation {
   position: sticky;
   top: 0;
-  width: 160px;
+  width: 13.438rem;
   overflow-y: scroll;
   border-right: 1px solid #000000;
 }
@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-/* faceți ca TOATE link-urile (principale și submeniu) să aibă padding și colo de fundal */
+/* faceți ca TOATE link-urile (principale și submeniu) să aibă padding și culoare de fundal */
 .mainmenu a {
   display: flex;
   align-items: center;

@@ -50,7 +50,6 @@
                     <li class="info-content">Rețineți că numele variabilei nu poate începe cu un număr sau cu un alt simbol special.</li>
 
                     <li class="info-content">Din cauza sensibilității la majuscule și minuscule a variabilelor PHP, $nume și $NUME sunt ambele procesate diferit.</li>
-
                     
                     <div data-pym-src='https://www.jdoodle.com/plugin' data-language="php"><span><</span>?php
   $txt = "variabila mea!";

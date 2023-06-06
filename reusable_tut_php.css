@@ -41,8 +41,8 @@ body {
 }
 
 .tutorial-images {
-  width: 25%;
-  height: 25%;
+  width: 365px;
+  height: 310px;
 }
 
 .code-elements {
@@ -55,6 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0.625rem;
+  gap: 12px;
   width: 98%;
   border: 1px solid #b9b9b9;
   border-radius: 0.5rem;
@@ -78,4 +79,25 @@ body {
 
 #first-page {
   justify-content: flex-end !important;
+}
+
+.table-container { 
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(231, 233, 235);
 }
