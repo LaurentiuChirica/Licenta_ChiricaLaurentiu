@@ -9,7 +9,6 @@
 
 <?php
 	include ("header.php");
-	
 	echo "\n\t";
 ?>
 <body>
@@ -39,15 +38,9 @@
                             <span class="php-syntax-example">?php</span>
                           </div>
 
-                          <br>
-                          
                           <span class="php-syntax-code">// Acesta este un comentariu pe o singură linie</span>
 
-                          <br>
-
                           <span class="php-syntax-code"># Acesta este, de asemenea, un comentariu pe o singură linie</span>
-
-                          <br>
 
                           <span class="php-syntax-example">?></span>
                         </div>
@@ -60,27 +53,15 @@
                             <span class="php-syntax-example">?php</span>
                           </div>
 
-                          <br>
-
                           <span class="php-syntax-code">/*</span>
-
-                          <br>
                           
                           <span class="php-syntax-code">Acesta este un comentariu pe mai multe linii</span>
-                          
-                          <br>
 
                           <span class="php-syntax-code">pentru a exemplifica</span>
 
-                          <br>
-
                           <span class="php-syntax-code">cum functioneaza</span>
                           
-                          <br>
-
                           <span class="php-syntax-code">*/</span>
-
-                          <br>
 
                           <span class="php-syntax-example">?></span>
                         </div>
@@ -90,20 +71,15 @@
                       <p class="info-content">Iată un exemplu de fișier PHP de bază cu un script PHP care afișează textul "Primul meu script in PHP!" pe o pagină web utilizând funcția PHP încorporată  <code class="code-elements">"echo"</code>:</p>
 
                       <div class="static-code-example">
-                          <div>
-                            <span class="php-syntax-example"><</span>
-                            <span class="php-syntax-example">?php</span>
-                          </div>
-
-
-                            <br>
-
-                            <span class="php-syntax-code">echo "Primul meu script in PHP!"; </span>
-
-                            <br>
-
-                            <span class="php-syntax-example">?></span>
+                        <div>
+                          <span class="php-syntax-example"><</span>
+                          <span class="php-syntax-example">?php</span>
                         </div>
+
+                        <span class="php-syntax-code">echo "Primul meu script in PHP!"; </span>
+
+                        <span class="php-syntax-example">?></span>
+                      </div>
 
                       <p class="info-content">Notă: Instrucțiunile PHP se termină cu punct și virgulă (;).</p>
                     </div>
@@ -129,7 +105,6 @@
 </body>
 
 <?php	
-
 	include ("footer.php");
 ?>
 </html>

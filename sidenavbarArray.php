@@ -25,8 +25,62 @@
         'url' => 'variabile.php',
     ],
     [
+        'label' => 'Domeniul variabilelor',
+        'url' => 'domeniulVariabilelor.php',
+    ],
+    [
+        'label' => 'Echo / Print',
+        'url' => 'echo&print.php',
+    ],
+    [
+        'label' => 'Tipuri de date',
+        'url' => 'tipuriDate.php',
+    ],
+    [
+        'label' => 'Constante',
+        'url' => 'constante.php',
+    ],
+    [
+        'label' => 'Operatori',
+        'url' => 'operatori.php',
+    ],
+    [
+        'label' => 'If else',
+        'url' => 'ifElse.php',
+    ],
+    [
+        'label' => 'Switch',
+        'url' => 'switch.php',
+    ],
+    [
+        'label' => 'Structuri repetitive',
+        'url' => 'structuriRepetitive.php',
+        'sub_menu' => [
+            [
+                'label' => 'While',
+                'url' => 'while.php'
+            ],
+            [
+                'label' => 'Do While',
+                'url' => 'doWhile.php'
+            ],
+            [
+                'label' => 'For',
+                'url' => 'for.php'
+            ],
+            [
+                'label' => 'Foreach',
+                'url' => 'foreach.php'
+            ],
+            [
+                'label' => 'Break/Continue',
+                'url' => 'break&continue.php'
+            ]
+        ]
+    ],
+    [
         'label' => 'Products',     
-        'url' => 'introducere.php',
+        'url' => '#',
         'sub_menu' => [
             [
                 'label' => 'Product 1',
@@ -59,138 +113,6 @@
                 'url' => '#'
             ]
         ]
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
     ],
     [
         'label' => 'Contact',

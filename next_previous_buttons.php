@@ -1,22 +1,24 @@
 <link rel="stylesheet" href="next_previous_buttons.css" type="text/css">
 
 <?php
-  include 'sidenavbarArray.php'; 
-  $previous="Pagina anterioara";
-  $next="Pagina urmatoare";
+  include 'sidenavbarArray.php';
+  $previous = "Pagina anterioară";
+  $next = "Pagina următoare";
   $current_url = $_SERVER['REQUEST_URI'];
   $current_url_substring = substr($current_url, 1);
   $prev_page = '';
   $next_page = '';
   
-  foreach ($menu_items as $index => $item) {
+  $flattened_menu = flattenMenuItems($menu_items); // Funcție pentru liniarizarea array-ului
+  
+  foreach ($flattened_menu as $index => $item) {
     if ($item['url'] === $current_url_substring) {
-        // Found the current page, so set the previous and next pages if they exist
-        if (isset($menu_items[$index - 1])) {
-            $prev_page = $menu_items[$index - 1];
+        // A găsit pagina curentă, deci setează paginile anterioare și următoare, dacă acestea există
+        if (isset($flattened_menu[$index - 1])) {
+            $prev_page = $flattened_menu[$index - 1];
         }
-        if (isset($menu_items[$index + 1])) {
-            $next_page = $menu_items[$index + 1];
+        if (isset($flattened_menu[$index + 1])) {
+            $next_page = $flattened_menu[$index + 1];
         }
         break;
     }
@@ -28,5 +30,20 @@
 
   if ($next_page) {
     echo '<a class="next-previous-button" href="' . $next_page['url'] . '">' . $next_page['label'] . '<img class="right-arrow" src="images/next-previous-arrow.png"></a>';
+  }
+
+  // Funcție pentru liniarizarea array-ului multidimensional
+  function flattenMenuItems($items) {
+    $flattened = [];
+
+    foreach ($items as $item) {
+        $flattened[] = $item;
+        
+        if (isset($item['sub_menu'])) {
+            $flattened = array_merge($flattened, flattenMenuItems($item['sub_menu']));
+        }
+    }
+
+    return $flattened;
   }
 ?>

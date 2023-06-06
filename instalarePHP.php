@@ -9,7 +9,6 @@
 
 <?php
 	include ("header.php");
-	
 	echo "\n\t";
 ?>
 <body>
@@ -26,25 +25,16 @@
             </div>
             
             <div class="info-container">
-              <p class="info-content">
-                Puteți crea și testa în siguranță aplicații web folosind PHP pe PC-ul dumneavoastră, fără a afecta sistemul live.
-              </p>
+              <p class="info-content">Puteți crea și testa în siguranță aplicații web folosind PHP pe PC-ul dumneavoastră, fără a afecta sistemul live.</p>
 
               <div class="info-content-container">
                   <p class="info-content">Aveți nevoie de următoarele programe pentru a utiliza PHP la nivel local:</p>
 
-                  <li class="info-content">
-                    Un server web compatibil cu PHP. Noi vom folosi, <a href="https://httpd.apache.org/" target=”_blank”>Apache</a> ca server web.
-                  </li>
+                  <li class="info-content">Un server web compatibil cu PHP. Noi vom folosi, <a href="https://httpd.apache.org/" target=”_blank”>Apache</a> ca server web.</li>
 
-                  <li class="info-content">
-                    Un server pentru baze de date. Se recomanda utilizarea serverului de baze de date MySQL.
-                  </li>
+                  <li class="info-content">Un server pentru baze de date. Se recomanda utilizarea serverului de baze de date MySQL.</li>
 
-                  <p class="info-content">
-                    Prin urmare, este mai simplu să găsiți un pachet software care combină PHP cu un server web și un server de baze de date. XAMPP si WAMPP sunt unule dintre cele mai cunoscute medii de dezvoltare PHP.
-                    XAMPP si WAMPP sunt o distribuție de servere web PHP, MariaDB și Apache care este simplu de instalat. Windows, Linux și macOS sunt suportate de XAMPP si WAMPP.                    
-                  </p>
+                  <p class="info-content">Prin urmare, este mai simplu să găsiți un pachet software care combină PHP cu un server web și un server de baze de date. XAMPP si WAMPP sunt unule dintre cele mai cunoscute medii de dezvoltare PHP. XAMPP si WAMPP sunt o distribuție de servere web PHP, MariaDB și Apache care este simplu de instalat. Windows, Linux și macOS sunt suportate de XAMPP si WAMPP.</p>
               </div>
 
               <hr>
@@ -179,7 +169,6 @@
 </body>
 
 <?php	
-
 	include ("footer.php");
 ?>
 </html>
