@@ -73,8 +73,38 @@
                 'url' => 'foreach.php'
             ],
             [
-                'label' => 'Break/Continue',
+                'label' => 'Break / Continue',
                 'url' => 'break&continue.php'
+            ]
+        ]
+    ],
+    [
+        'label' => 'Functii',
+        'url' => 'functii.php',
+    ],
+    [
+        'label' => 'Array-uri',     
+        'url' => 'array.php',
+        'sub_menu' => [
+            [
+                'label' => 'Array Indexat',
+                'url' => 'arrayIndexat.php'
+            ],
+            [
+                'label' => 'Array Asociativ',
+                'url' => 'arrayAsociativ.php'
+            ],
+            [
+                'label' => 'Array Multidimensional',
+                'url' => 'arrayMultidimensional.php'
+            ],
+            [
+                'label' => 'Sortare Array-uri',
+                'url' => 'sortareArray.php'
+            ],
+            [
+                'label' => 'Functii Array-uri',
+                'url' => 'functiiArray.php'
             ]
         ]
     ],

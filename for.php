@@ -15,33 +15,90 @@
       </div>
 
       <div class="main-content-container">
-            <div class="presentation-title">Structuri repetitive</div>
+            <div class="presentation-title">For</div>
 
             <div class="next-previous-buttons-container">
               <?php include ("next_previous_buttons.php"); ?>
             </div>
 
             <div class="info-container">
-              <div class="content-box">
                 <div class="info-content-container">
-                  <p class="info-content">În PHP, structurile repetitive/buclele sunt folosite pentru a rula în mod repetat același bloc de cod. Aceste patru forme de bucle sunt acceptate de PHP:</p>
-  
-                  <li class="info-content"><code class="code-elements">while</code> - execută o buclă printr-un bloc de cod atâta timp cât condiția specificată este adevărată</li>
+                  <p class="info-content">În cazul în care numărul de iterații este cunoscut, acesta trebuie utilizat; în caz contrar, trebuie utilizată o buclă while. Acest lucru indică faptul că bucla for este utilizată atunci când numărul de ori în care doriți să executați un bloc de cod este deja cunoscut.</p>
 
-                  <li class="info-content"><code class="code-elements">do...while</code> - execută o buclă printr-un bloc de cod o singură dată, apoi repetă bucla atâta timp cât condiția specificată este adevărată.</li>
+                  <p class="info-content">Utilizatorii pot consolida toate instrucțiunile legate de bucle într-o singură locație cu ajutorul acestei funcții. A se vedea următoarea sintaxă:</p>
 
-                  <li class="info-content"><code class="code-elements">for</code> - trece în buclă printr-un bloc de cod de un anumit număr de ori</li>
+                  <h2>Sintaxa:</h2>
 
-                  <li class="info-content"><code class="code-elements">foreach</code> - face o buclă printr-un bloc de cod pentru fiecare element dintr-un vector</li>
+                  <div class="static-code-example">
+                    <span class="php-syntax-example">&lt;?php</span>
 
-                  <h2>Fiecare tip de buclă va fi descris în detaliu și cu exemple în capitolele care urmează.</h2>
-              </div>
+                    <span class="php-syntax-code">for(inițializare; condiție; incrementare/decrementare){ </span>
+
+                    <span class="php-syntax-code">&nbsp;&nbsp;// codul care urmează să fie executat</span>
+
+
+                    <span class="php-syntax-code">}</span>
+
+                    <span class="php-syntax-example">?></span>
+                  </div>
+
+                  <h2>Parametrii</h2>
+
+                  <p class="info-content">Bucla for din PHP este comparabilă cu buclele for din Java, C și C++. Următoarele definiții se aplică parametrilor buclei for:</p>
+
+                  <li class="info-content">inițializare - Setează valoarea contorului buclei la zero. Bucla for efectuează doar o singură dată valoarea inițială. Acest element nu este necesar.</li>
+
+                  <li class="info-content">evaluează - valoarea fiecărei iterații este condiția. Până când condiția este falsă, bucla continuă să ruleze. Dacă este TRUE, execuția buclei continuă; dacă este FALSE, se termină.</li>
+
+                  <li class="info-content">Creștere/diminuare - Crește sau scade valoarea variabilei.</li>
+
+                  <h2>Exemplu:</h2>
+
+                  <div class="static-code-example">
+                    <span class="php-syntax-example">&lt;?php</span>
+                    
+                    <span class="php-syntax-code">for ($x = 0; $x <= 10; $x++) {</span>
+
+                    <span class="php-syntax-code">&nbsp;echo "Numarul este: $x \n";</span>
+
+                    <span class="php-syntax-code">}</span>
+
+                    <span class="php-syntax-example">?></span>
+                  </div>
+
+                  <h2>Rezultat:</h2>
+
+                  <div class="static-code-example">                    
+                    <span class="php-syntax-code">Numarul este: 0</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 1</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 2</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 3</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 4</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 5</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 6</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 7</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 8</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 9</span>
+                    
+                    <span class="php-syntax-code">Numarul este: 10</span>
+                  </div>
               </div>
             </div>
-            <div class="info-content-container">
+            <div class="info-container">
 
-            <div data-pym-src='https://www.jdoodle.com/plugin' data-language="php"><span><</span>?php
-
+            <div data-pym-src='https://www.jdoodle.com/plugin' data-language="php">&lt;?php
+  for ($x = 0; $x <= 10; $x++) {
+    echo "Numarul este: $x \n";
+  }
 ?>
 </div>
               <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
