@@ -113,3 +113,11 @@ tr:nth-child(even) {
   height: 1px;
   background-color: black;
 }
+
+#footer {
+  margin-top: -32px;
+}
+
+#header {
+  margin-top: -17px !important;
+}

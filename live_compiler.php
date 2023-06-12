@@ -1,3 +1,12 @@
+<!-- 
+    Exemplu de intrepretor de cod PHP realizat integral de la 0
+
+    Din text-area se extrage inputul scris de utilizator
+
+    Folosim functia eval() pentru a evalua codul scris ca fiind cod in PHP, se returneaza compilarea lui
+
+    Ramane doar un exemplu deoarece functia eval() ruleaza orice fel de script, indiferent daca este malitios sau nu.
+ -->
 <?php
     if (isset($_POST['submit'])) {
         $cod = $_POST['cod'];
