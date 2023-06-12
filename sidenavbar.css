@@ -1,3 +1,7 @@
+/* 
+  Fisier-ul css dedicat pentru sidenavbar.
+  Modificarile aduse aici se vor propaga peste toate utilizarile meniului.
+*/
 .navigation {
   position: sticky;
   top: 0;
@@ -17,7 +21,7 @@
   margin: 0;
 }
 
-/* faceți ca TOATE link-urile (principale și submeniu) să aibă padding și culoare de fundal */
+/* faceți ca toate link-urile (principale și submeniu) să aibă padding și culoare de fundal */
 .mainmenu a {
   display: flex;
   align-items: center;
@@ -60,4 +64,9 @@
 
 .active-item {
   background-color: #c5c5c5 !important;
+}
+
+.chapter-title {
+  pointer-events: none;
+  font-size: 1.35rem !important;
 }

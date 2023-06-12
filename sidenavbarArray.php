@@ -1,5 +1,38 @@
 <?php
+  // Array-ul de mai jos reprezinta meniul din stanga al paginii  si butoanele de navigare intre pagini pentru sectiunea de tutoriale PHP 
+  // In el se pot adauga capitole si subcapitole, odata adaugat/sters, schimbarile se vor propaga in toata aplicatia
+
+  // Acest array este folosit in: 
+  //    sidenavbar.php pentru a genera meniul lateral
+  //    next_previous_buttons.php pentru a genera butoanele de urmatorul si anterior capitol pentru o navigare mai usoara in pagina
+
+  // Structura unui item cu si fara submenu 
+  //   [
+  //     'label' => 'Home', - Titlul elementului din meniu ce va aparea pe pagina 
+  //     'url' => 'tut_PHP.php' - fisierul php catre care vei fi redirectionat
+  //   ], 
+  //   [
+  //     'label' => 'Structuri repetitive', - Titlul elementului din meniu ce apare pe pagina si ascunde celelalte elemente din sub_menu pana se face hover
+  //     'url' => 'structuriRepetitive.php', - fisierul php catre care vei fi redirectionat
+  //     'sub_menu' => [ - array-ul de submeniuri - lista de submeniuri poate fi extinsa nelimitat.
+  //         [
+  //             'label' => 'While', - Titlul elementului din sub_menu ce apare pe pagina cand se face hover la elementul de pe acelasi nivel cu 'sub_menu'
+  //             'url' => 'while.php' - fisierul php catre care vei fi redirectionat
+  //         ],
+  //         [
+  //             'label' => 'Break / Continue',
+  //             'url' => 'break&continue.php'
+  //         ]
+  //     ]
+  // ],
+
+  // Nota: elementele care au url='chapterTitle' sunt titlu de capitol pentru a putea separa meniul pe capitole
+  // Acestea au o clasa de css aplicata pentru a putea fi manipulate dupa nevoie.
   $menu_items = [
+    [
+        'label' => 'Tutorial PHP',
+        'url' => 'chapterTitle'
+    ],
     [
         'label' => 'Home',
         'url' => 'tut_PHP.php'
@@ -107,6 +140,80 @@
                 'url' => 'functiiArray.php'
             ]
         ]
+    ],
+    [
+        'label' => 'Superglobals',     
+        'url' => 'superglobals.php',
+        'sub_menu' => [
+            [
+                'label' => '$GLOBALS',
+                'url' => 'superglobals_globals.php'
+            ],
+            [
+                'label' => '$_SERVER',
+                'url' => 'superglobals_server.php'
+            ],
+            [
+                'label' => '$_REQUEST',
+                'url' => 'superglobals_request.php'
+            ],
+            [
+                'label' => '$_POST',
+                'url' => 'superglobals_post.php'
+            ],
+            [
+                'label' => '$_GET',
+                'url' => 'superglobals_get.php'
+            ]
+        ]
+    ],
+    [
+        'label' => 'String',     
+        'url' => 'string.php',
+    ],
+    [
+        'label' => 'RegEx',     
+        'url' => 'regex.php',
+    ],
+    [
+        'label' => 'Formulare PHP',
+        'url' => 'chapterTitle'
+    ],
+    [
+        'label' => 'Contact',
+        'url' => '/contact'
+    ],
+    [
+        'label' => 'Contact',
+        'url' => '/contact'
+    ],
+    [
+        'label' => 'Contact',
+        'url' => '/contact'
+    ],
+    [
+        'label' => 'Contact',
+        'url' => '/contact'
+    ],
+    [
+        'label' => 'Contact',
+        'url' => '/contact'
+    ],
+    [
+        'label' => 'Contact',
+        'url' => '/contact'
+    ],
+    [
+        'label' => 'OOP PHP',
+        'url' => 'chapterTitle'
+    ],
+    [
+        'label' => 'Concepte OOP',
+        'url' => 'concepteOOP.php'
+    ],
+    [
+        'label' => 'Clase/Obiecte',
+        'url' => 'clase&obiecte.php'
     ],
     [
         'label' => 'Products',     

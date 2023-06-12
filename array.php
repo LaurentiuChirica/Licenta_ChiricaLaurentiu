@@ -56,45 +56,31 @@
           
           <li class="info-content">Array multidimensional</li>
 
-        </div>
+          <h2>Exemplu:</h2>
 
+          <div class="static-code-example">
+            <span class="php-syntax-example">&lt;?php</span>
+
+            <span class="php-syntax-code">$culori = array("rosu", "verde", "albastru", "galben");</span>
+
+            <span class="php-syntax-code">echo count($culori); // returneaza lungimea(numar elementelor) din array</span>
+
+            <span class="php-syntax-example">?></span>
+          </div>
+
+          <h2>Rezultat:</h2>
+
+          <div class="static-code-example">
+            <span class="php-syntax-code">4</span>
+          </div>
+        </div>
       </div>
       <div class="info-container">
         <h2 class="info-content">Puteti testa mai jos ce a fost prezentat pana acum</h2>
 
         <div data-pym-src='https://www.jdoodle.com/plugin' data-language="php">&lt;?php
-  function scriereMesaj_1($nume, $varsta) {
-    echo "Salutare $nume, ai $varsta de ani! \n";
-  }
-  scriereMesaj_1("John", 20);
-  scriereMesaj_1("Mike", 23);
-  scriereMesaj_1("Trevor", 25);
-
-  echo "\n\n";
-
-  function adaugare(&$mesaj) {  
-    $mesaj .= 'Apel prin referinta';  
-  }  
-  $mesaj = 'Salutare ';  
-  adaugare($mesaj);  
-  echo $mesaj;  
-
-  echo "\n\n";
-  
-  function scriereMesaj_2($nume="John") {
-    echo "Salutare $nume \n";
-  }
-
-  scriereMesaj_2("Mike");
-  scriereMesaj_2();
-  scriereMesaj_2("Trevor");
-
-  echo "\n";
-
-  function ridicaLaPatrat($numar) {
-    return $numar * $numar;
-  }
-  echo "5 la patrat este: " .ridicaLaPatrat(5);
+  $culori = array("rosu", "verde", "albastru", "galben");
+  echo count($culori); // returneaza lungimea(numar elementelor) din array
 ?>
         </div>
         <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
