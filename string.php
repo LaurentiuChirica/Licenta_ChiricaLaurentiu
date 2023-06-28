@@ -24,7 +24,7 @@
 
       <div class="info-container">
         <div class="info-content-container">
-          <h1>Diverse functii pentru array-uri</h1>
+          <h1>Ce este un șir de caractere?</h1>
 
           <p class="info-content">Un șir de caractere PHP este o colecție de caractere care poate fi utilizată pentru a stoca și modifica conținutul. Deoarece PHP acceptă numai 256 de caractere, nu este disponibil suportul nativ Unicode. În PHP, un literal de șir de caractere poate fi specificat în 4 moduri diferite:</p>
           

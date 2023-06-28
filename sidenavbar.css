@@ -40,7 +40,7 @@
 .mainmenu li:hover .submenu,
 .mainmenu li > a.active-item + .submenu {
   display: block;
-  max-height: 200px;
+  max-height: 300px;
 }
 
 .submenu a {

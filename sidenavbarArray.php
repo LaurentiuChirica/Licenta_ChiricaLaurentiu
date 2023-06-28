@@ -28,6 +28,7 @@
 
   // Nota: elementele care au url='chapterTitle' sunt titlu de capitol pentru a putea separa meniul pe capitole
   // Acestea au o clasa de css aplicata pentru a putea fi manipulate dupa nevoie.
+
   $menu_items = [
     [
         'label' => 'Tutorial PHP',
@@ -170,38 +171,64 @@
     [
         'label' => 'String',     
         'url' => 'string.php',
+        'sub_menu' => [
+            [
+                'label' => 'Functii string-uri',
+                'url' => 'functiiStringuri.php'
+            ],
+        ]
     ],
     [
         'label' => 'RegEx',     
         'url' => 'regex.php',
     ],
     [
-        'label' => 'Formulare PHP',
+        'label' => 'Manipulare Formulare',
+        'url' => 'manipulareFormulare.php'
+    ],
+    [
+        'label' => 'Validare Formulare',
+        'url' => 'validareFormulare.php'
+    ],
+    [
+        'label' => 'Avansat PHP',
         'url' => 'chapterTitle'
     ],
     [
-        'label' => 'Contact',
-        'url' => '/contact'
+        'label' => 'Data și ora',
+        'url' => 'dataSiOra.php'
     ],
     [
-        'label' => 'Contact',
-        'url' => '/contact'
+        'label' => 'Includere Fișiere',
+        'url' => 'includereFisiere.php'
     ],
     [
-        'label' => 'Contact',
-        'url' => '/contact'
+        'label' => 'Manipulare Fișiere',
+        'url' => 'manipulareFisiere.php'
     ],
     [
-        'label' => 'Contact',
-        'url' => '/contact'
+        'label' => 'Deschidere Fișiere',
+        'url' => 'deschidereFisiere.php'
     ],
     [
-        'label' => 'Contact',
-        'url' => '/contact'
+        'label' => 'Citire Fișiere',
+        'url' => 'citireFisiere.php'
     ],
     [
-        'label' => 'Contact',
-        'url' => '/contact'
+        'label' => 'Scriere Fișiere',
+        'url' => 'scriereFisiere.php'
+    ],
+    [
+        'label' => 'Ștergere Fișiere',
+        'url' => 'stergereFisiere.php'
+    ],
+    [
+        'label' => 'Încărcare de Fișiere',
+        'url' => 'incarcareFisiere.php'
+    ],
+    [
+        'label' => 'Cookie',
+        'url' => 'cookie.php'
     ],
     [
         'label' => 'OOP PHP',
@@ -214,6 +241,54 @@
     [
         'label' => 'Clase/Obiecte',
         'url' => 'clase&obiecte.php'
+    ],
+    [
+        'label' => 'Constructor/Destructor',
+        'url' => 'constructor&Destructor.php'
+    ],
+    [
+        'label' => 'Specificatori de access',
+        'url' => 'specificatoriAcces.php'
+    ],
+    [
+        'label' => 'Mostenire',
+        'url' => 'mostenire.php'
+    ],
+    [
+        'label' => 'Constante de clasă',
+        'url' => 'constanteClasa.php'
+    ],
+    [
+        'label' => 'Clase Abstracte',
+        'url' => 'claseAbstracte.php'
+    ],
+    [
+        'label' => 'Interfață',
+        'url' => 'interfata.php'
+    ],
+    [
+        'label' => 'Traits / Trasaturi',
+        'url' => 'traitsOOP.php'
+    ],
+    [
+        'label' => 'Metode Statice',
+        'url' => 'metodeStatice.php'
+    ],
+    [
+        'label' => 'Proprietăți Statice',
+        'url' => 'proprietatiStatice.php'
+    ],
+    [
+        'label' => 'Namespaces',
+        'url' => 'namespaces.php'
+    ],
+    [
+        'label' => 'Iterabili',
+        'url' => 'iterables.php'
+    ],
+    [
+        'label' => 'Diverse',
+        'url' => 'chapterTitle'
     ],
     [
         'label' => 'Products',     
@@ -250,66 +325,6 @@
                 'url' => '#'
             ]
         ]
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
     ],
     [
         'label' => 'Contact',

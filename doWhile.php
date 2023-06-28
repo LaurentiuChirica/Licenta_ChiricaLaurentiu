@@ -41,7 +41,6 @@
 
             <span class="php-syntax-code">&nbsp;&nbsp;// codul care urmează să fie executat</span>
 
-
             <span class="php-syntax-code">} while (conditia este TRUE)</span>
 
             <span class="php-syntax-example">?></span>
