@@ -26,86 +26,170 @@
         <div class="info-content-container">
           <p class="info-content">O clasă este un șablon pentru obiecte, iar un obiect este o instanță a clasei.</p>
 
-          <h2>Exemplu:</h2>
-
-          <p class="info-content">Să considerăm că avem o clasă numită Masini. O masina poate avea atribute cum ar fi brand, culoare, greutatea etc. Valorile acestor proprietăți pot fi stocate în variabile precum $brand, $culoare și $greutate pe care le putem defini.</p>
+          <p class="info-content">Să considerăm că avem o clasă numită Masini. O masina poate avea atribute cum ar fi brand, culoare, greutatea etc. Valorile acestor proprietăți pot fi stocate în variabile precum $brand, $culoare și $categorie pe care le putem defini.</p>
 
           <p class="info-content">Acțiunile și proprietățile clasei sunt toate trimise către obiectele individuale (suzuki, mercedes etc.) atunci când acestea sunt create, dar fiecare obiect va avea un set unic de valori pentru proprietăți.</p>
 
-          <li class="info-content">OOP este mai rapid și mai simplu de utilizat.</li>
-          
-          <li class="info-content">OOP oferă programelor o structură clară.</li>
-          
-          <li class="info-content">OOP face posibilă proiectarea de aplicații complet reutilizabile cu mai puțin cod și cu un timp de dezvoltare mai rapid, încurajând programatorii PHP să nu se repete (DRY - Don't Repeat Yourself) în codul lor.</li>
+          <h1>Definirea unei Clase</h1>
 
-          <p class="info-content"><b>Recomandare:</b> Abordarea DRY (Don't Repeat Yourself) urmărește să reducă repetarea codului. În loc să repetați aceleași coduri la nesfârșit, ar trebui să le extrageți pe cele care sunt comune programului, să le puneți într-o singură locație și să le folosiți.</p>
-
-          <h1>Clasa</h1>
-
-          <p class="info-content">O clasă este un tip de entitate care stabilește comportamentul și proprietățile unui obiect. În alți termeni, este un plan sau un set de instrucțiuni pentru crearea unui anumit tip de obiect.</p>
-
-          <p class="info-content">Declarați o clasă în PHP prin începerea declarației cu cuvântul cheie class, apoi adăugând numele clasei și o pereche de paranteze ({}).</p>
-
-          <h2>Sintaxa:</h2>
-          <div class="static-code-example">
-            <span class="php-syntax-example">&lt;?php</span>
-
-            <span class="php-syntax-code">class ClasaMea {</span>
-
-            <span class="php-syntax-code">&nbsp;//proprietatile clasei si metodele vin aici</span>
-
-            <span class="php-syntax-code">}</span>
-
-            <span class="php-syntax-example">?></span>
-          </div>
-
-          <img src="/images/php-oops-concept.png" style="width: 60%; height: 80%;">
-
-          <p class="info-content">Acesta este planul lucrării de construcție care este clasa, iar casele și apartamentele realizate după acest plan sunt obiectele.</p>
-
-          <h1>Obiect</h1>
-
-          <p class="info-content">O instanță particulară a structurii de date este definită de o clasă. Creăm numeroase obiecte care sunt membri ai unei clase după ce aceasta a fost definită. O instanță este un alt termen pentru un obiect.</p>
-
-          <p class="info-content">Un obiect este ceva care poate efectua un set de activități conexe.</p>
+          <p class="info-content">Cuvântul cheie class este utilizat pentru a defini o clasă, care este urmată de numele clasei și de două paranteze {}. Între paranteze se află toate atributele și operațiile sale:</p>
 
           <h2>Exemplu:</h2>
+
           <div class="static-code-example">
             <span class="php-syntax-example">&lt;?php</span>
 
-            <span class="php-syntax-code">class Demonstratie {</span>
+            <span class="php-syntax-code">class Masini {</span>
 
-            <span class="php-syntax-code">&nbsp;private $variabila ="Salutare!";</span>
+            <span class="php-syntax-code">&nbsp;// Proprietati ale clasei</span>
 
-            <span class="php-syntax-code">&nbsp;public function afisare() {</span>
+            <span class="php-syntax-code">&nbsp;public $brand;</span>
 
-            <span class="php-syntax-code">&nbsp;&nbsp;echo $this->variabila;</span>
+            <span class="php-syntax-code">&nbsp;public $culoare;</span>
+
+            <span class="php-syntax-code">&nbsp;public $categorie;</span>
+
+            <span class="php-syntax-code">&nbsp;// Metode</span>
+
+            <span class="php-syntax-code">&nbsp; function setare_brand($brand) {</span>
+
+            <span class="php-syntax-code">&nbsp;&nbsp; $this->brand = $brand;</span>
+
+            <span class="php-syntax-code">&nbsp;}</span>
+
+            <span class="php-syntax-code">&nbsp; function obtine_brand() {</span>
+
+            <span class="php-syntax-code">&nbsp;&nbsp; return $this->brand;</span>
 
             <span class="php-syntax-code">&nbsp;}</span>
 
             <span class="php-syntax-code">}</span>
 
-            <span class="php-syntax-code">$obiect = new Demonstratie();</span>
+            <span class="php-syntax-example">?></span>
+          </div>
 
-            <span class="php-syntax-code">$obiect->afisare();</span>
+          <p class="info-content"><b>Nota:</b> O variabila locala are prioritate mai mare decat o variabila globala.</p>
+
+          <h1>Definirea obiectelor</h1>
+
+          <p class="info-content">Fără obiecte, clasele sunt inutile. O clasă poate fi utilizată pentru a crea mai multe obiecte. Toate atributele și metodele definite de clasă sunt prezente în fiecare obiect, dar valorile lor vor varia.</p>
+
+          <p class="info-content">Cuvântul cheie new este utilizat pentru a crea obiecte care aparțin unei clase.</p>
+
+          <h2>Exemplu:</h2>
+
+          <div class="static-code-example">
+            <span class="php-syntax-example">&lt;?php</span>
+
+            <span class="php-syntax-code">class Masini {</span>
+
+            <span class="php-syntax-code">&nbsp;// Proprietati ale clasei</span>
+
+            <span class="php-syntax-code">&nbsp;public $brand;</span>
+
+            <span class="php-syntax-code">&nbsp;public $culoare;</span>
+
+            <span class="php-syntax-code">&nbsp;public $categorie;</span>
+
+            <span class="php-syntax-code">&nbsp;// Metode</span>
+
+            <span class="php-syntax-code">&nbsp; function setare_brand($brand) {</span>
+
+            <span class="php-syntax-code">&nbsp;&nbsp; $this->brand = $brand;</span>
+
+            <span class="php-syntax-code">&nbsp;}</span>
+
+            <span class="php-syntax-code">&nbsp; function obtine_brand() {</span>
+
+            <span class="php-syntax-code">&nbsp;&nbsp; return $this->brand;</span>
+
+            <span class="php-syntax-code">&nbsp;}</span>
+
+            <span class="php-syntax-code">}</span>
+
+            <span class="php-syntax-code">$mercedes = new Masini();</span>
+
+            <span class="php-syntax-code">$audi = new Masini();</span>
+
+            <span class="php-syntax-code">$mercedes->setare_brand('Mercedes-Benz');</span>
+
+            <span class="php-syntax-code">$audi->setare_brand('Audi');</span>
+
+            <span class="php-syntax-code"></span>
+
+            <span class="php-syntax-code">echo $mercedes->obtine_brand();</span>
+
+            <span class="php-syntax-code">echo $audi->obtine_brand();</span>
 
             <span class="php-syntax-example">?></span>
           </div>
 
+          <h2>Rezultat:</h2>
+
+          <div class="static-code-example">
+            <span class="php-syntax-code">Mercedes-Benz</span>
+
+            <span class="php-syntax-code">Audi</span>
+          </div>
+
+          <h1>Cuvântul cheie $this</h1>
+
+          <p class="info-content">Cuvântul cheie $this, care apare numai în interiorul metodelor, se referă la obiectul curent.</p>
+
+
+          <h1>Instanceof</h1>
+
+          <p class="info-content">Cuvântul cheie instanceof poate fi utilizat pentru a determina dacă un element aparține unei anumite clase:</p>
+
+          <h2>Exemplu:</h2>
+
+          <div class="static-code-example">
+            <span class="php-syntax-example">&lt;?php</span>
+
+            <span class="php-syntax-code">$mercedes = new Masini();</span>
+
+            <span class="php-syntax-code">var_dump($mercedes instanceof Masini);</span>
+
+            <span class="php-syntax-example">?></span>
+          </div>
+
+          <h2>Rezultat:</h2>
+
+          <div class="static-code-example">
+            <span class="php-syntax-code">bool(true)</span>
+          </div>
         </div>
       </div>
       <div class="info-container">
         <h2 class="info-content">Puteti testa mai jos ce a fost prezentat pana acum</h2>
 
         <div data-pym-src='https://www.jdoodle.com/plugin' data-language="php">&lt;?php
-  class Demonstratie {
-    private $variabila ="Salutare!";
-    public function afisare() {
-      echo $this->variabila;
+  class Masini {
+
+  // Proprietati ale clasei
+  public $brand;
+  public $culoare;
+  public $categorie;
+
+  // Metode
+    function setare_brand($brand) {
+      $this->brand = $brand;
+    }
+    function obtine_brand() {
+      return $this->brand;
     }
   }
-  $obiect = new Demonstratie();
-  $obiect->afisare();
+
+  $mercedes = new Masini();
+  $audi = new Masini();
+  $mercedes->setare_brand('Mercedes-Benz');
+  $audi->setare_brand('Audi');
+  echo $mercedes->obtine_brand();
+  echo "\n";
+  echo $audi->obtine_brand();
+  
+  echo "\n";
+  var_dump($mercedes instanceof Masini);
 ?>
 </div>
         <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
