@@ -47,7 +47,7 @@
         'url' => 'instalarePHP.php'
     ],
     [
-        'label' => 'Sintaxa',
+        'label' => 'Sintaxă',
         'url' => 'sintaxa.php'
     ],
     [
@@ -87,7 +87,7 @@
         'url' => 'switch.php',
     ],
     [
-        'label' => 'Structuri repetitive',
+        'label' => 'Structuri Repetitive',
         'url' => 'structuriRepetitive.php',
         'sub_menu' => [
             [
@@ -113,7 +113,7 @@
         ]
     ],
     [
-        'label' => 'Functii',
+        'label' => 'Funcții',
         'url' => 'functii.php',
     ],
     [
@@ -137,7 +137,7 @@
                 'url' => 'sortareArray.php'
             ],
             [
-                'label' => 'Functii Array-uri',
+                'label' => 'Funcții Array-uri',
                 'url' => 'functiiArray.php'
             ]
         ]
@@ -173,7 +173,7 @@
         'url' => 'string.php',
         'sub_menu' => [
             [
-                'label' => 'Functii string-uri',
+                'label' => 'Funcții string-uri',
                 'url' => 'functiiStringuri.php'
             ],
         ]
@@ -195,7 +195,7 @@
         'url' => 'chapterTitle'
     ],
     [
-        'label' => 'Data și ora',
+        'label' => 'Dată și oră',
         'url' => 'dataSiOra.php'
     ],
     [
@@ -229,6 +229,26 @@
     [
         'label' => 'Cookie',
         'url' => 'cookie.php'
+    ],
+    [
+        'label' => 'Session',
+        'url' => 'session.php'
+    ],
+    [
+        'label' => 'Filtrare',
+        'url' => 'filtrare.php'
+    ],
+    [
+        'label' => 'Filtrare Avansată',
+        'url' => 'filtrareAvansata.php'
+    ],
+    [
+        'label' => 'JSON',
+        'url' => 'json.php'
+    ],
+    [
+        'label' => 'Excepții',
+        'url' => 'exceptii.php'
     ],
     [
         'label' => 'OOP PHP',
@@ -285,6 +305,66 @@
     [
         'label' => 'Iterabili',
         'url' => 'iterables.php'
+    ],
+    [
+        'label' => 'MySQL DB',
+        'url' => 'chapterTitle'
+    ],
+    [
+        'label' => 'Bază de Date',
+        'url' => 'bazaDeDate.php'
+    ],
+    [
+        'label' => 'Conectare DB',
+        'url' => 'conectareDB.php'
+    ],
+    [
+        'label' => 'Creare DB',
+        'url' => 'creareDB.php'
+    ],
+    [
+        'label' => 'Creare Tabel',
+        'url' => 'creareTabel.php'
+    ],
+    [
+        'label' => 'Inserare Date Tabel',
+        'url' => 'inserareTabel.php'
+    ],
+    [
+        'label' => 'Obtine ultimul Id',
+        'url' => 'obtineUltimulId.php'
+    ],
+    [
+        'label' => 'Inserare Multipla',
+        'url' => 'inserareMultipla.php'
+    ],
+    [
+        'label' => 'Declarații Pregătite',
+        'url' => 'declaratiiPregatite.php'
+    ],
+    [
+        'label' => 'Selectare Date',
+        'url' => 'selectareDate.php'
+    ],
+    [
+        'label' => 'Declarația Where',
+        'url' => 'declaratiaWhere.php'
+    ],
+    [
+        'label' => 'Declarația Order By',
+        'url' => 'declaratiaOrderBy.php'
+    ],
+    [
+        'label' => 'Declarația Delete',
+        'url' => 'declaratiaDelete.php'
+    ],
+    [
+        'label' => 'Actualizare Date',
+        'url' => 'actualizareDate.php'
+    ],
+    [
+        'label' => 'Limitare Date',
+        'url' => 'limitareDate.php'
     ],
     [
         'label' => 'Diverse',

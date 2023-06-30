@@ -40,7 +40,7 @@
 
           <h2>Crearea unui array</h2>
 
-          <p class="info-content">Funcția  <code class="code-elements">array()</code> din PHP este utilizată pentru a construi un array.</p>
+          <p class="info-content">Funcția <code class="code-elements">array()</code> din PHP este utilizată pentru a construi un array.</p>
 
           <div class="static-code-example">
             <span class="php-syntax-example">array();</span>
