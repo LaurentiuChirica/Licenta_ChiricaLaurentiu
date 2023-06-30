@@ -347,20 +347,20 @@
         'url' => 'selectareDate.php'
     ],
     [
-        'label' => 'Declarația Where',
-        'url' => 'declaratiaWhere.php'
+        'label' => 'Clauza Where',
+        'url' => 'clauzaWhere.php'
     ],
     [
-        'label' => 'Declarația Order By',
-        'url' => 'declaratiaOrderBy.php'
+        'label' => 'Clauza Order By',
+        'url' => 'clauzaOrderBy.php'
     ],
     [
         'label' => 'Declarația Delete',
         'url' => 'declaratiaDelete.php'
     ],
     [
-        'label' => 'Actualizare Date',
-        'url' => 'actualizareDate.php'
+        'label' => 'Declarația Update',
+        'url' => 'declaratiaUpdate.php'
     ],
     [
         'label' => 'Limitare Date',

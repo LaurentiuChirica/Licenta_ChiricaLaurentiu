@@ -26,9 +26,26 @@
         <div class="info-content-container">
           <h1>Ce este o declaratie pregatita?</h1>
 
-          <p class="info-content">Metoda mysqli_multi_query() trebuie să fie utilizată pentru a rula mai multe instrucțiuni SQL.</p>
+          <p class="info-content">O declaratie pregătită este o caracteristică care vă permite să executați în mod eficient aceleași comenzi SQL (sau comenzi similare) din nou și din nou.</p>
 
-          <p class="info-content">Ar trebui adăugate 3 noi înregistrări în baza de date "Student".</p>
+          <p class="info-content">Declarațiile pregătite funcționează după cum urmează:</p> 
+
+          <p class="info-content"><b>1.</b> Pregătiți: Un șablon pentru o instrucțiune SQL este creat și livrat bazei de date. Valorile incomplete sunt cunoscute sub numele de parametri și sunt indicate prin semnul întrebării ("?")</p>
+          
+          <p class="info-content">Exemplu: INSERT INTO MyGuests VALUES(?,?,?,?)</p>
+
+          <p class="info-content"><b>2.</b> Șablonul de instrucțiuni SQL este analizat, compilat și optimizat de baza de date, care stochează apoi rezultatul fără a-l executa efectiv.</p>
+
+          <p class="info-content"><b>3.</b> Se execută: Baza de date execută instrucțiunea după ce aplicația leagă valorile parametrilor la un moment dat. Instrucțiunea poate fi executată de program de câte ori este necesar cu diverse valori.</p>
+
+          <p class="info-content">Avantaje:</p>
+
+          <li class="info-content">Deoarece interogarea este pregătită doar o singură dată (în ciuda faptului că instrucțiunea este executată de mai multe ori), instrucțiunile pregătite accelerează analiza.</li>
+
+          <li class="info-content">Parametrii legați reduc cantitatea de date trimise către server, deoarece trebuie să transmiteți doar parametrii de fiecare dată, în loc de întreaga interogare.</li>
+          
+          <li class="info-content">Deoarece valorile parametrilor care sunt transferate ulterior cu ajutorul unui protocol separat nu trebuie să fie scăpate în mod corespunzător, declarațiile pregătite sunt extrem de utile în protejarea împotriva injecțiilor SQL. Injectarea SQL este imposibilă dacă șablonul declarației inițiale nu este derivat din date externe.</li>
+
 
           <h2>Exemplu MySQLi</h2>
 
