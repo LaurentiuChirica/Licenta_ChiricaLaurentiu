@@ -9,19 +9,19 @@
   // Structura unui item cu si fara submenu 
   //   [
   //     'label' => 'Home', - Titlul elementului din meniu ce va aparea pe pagina 
-  //     'url' => 'tut_PHP.php' - fisierul php catre care vei fi redirectionat
+  //      'url' => '../php_Docs/tut_PHP.php' - fisierul php catre care vei fi redirectionat
   //   ], 
   //   [
   //     'label' => 'Structuri repetitive', - Titlul elementului din meniu ce apare pe pagina si ascunde celelalte elemente din sub_menu pana se face hover
-  //     'url' => 'structuriRepetitive.php', - fisierul php catre care vei fi redirectionat
+  //      'url' => '../php_Docs/structuriRepetitive.php', - fisierul php catre care vei fi redirectionat
   //     'sub_menu' => [ - array-ul de submeniuri - lista de submeniuri poate fi extinsa nelimitat.
   //         [
   //             'label' => 'While', - Titlul elementului din sub_menu ce apare pe pagina cand se face hover la elementul de pe acelasi nivel cu 'sub_menu'
-  //             'url' => 'while.php' - fisierul php catre care vei fi redirectionat
+  //              'url' => '../php_Docs/while.php' - fisierul php catre care vei fi redirectionat
   //         ],
   //         [
   //             'label' => 'Break / Continue',
-  //             'url' => 'break&continue.php'
+  //              'url' => '../php_Docs/break&continue.php'
   //         ]
   //     ]
   // ],
@@ -36,379 +36,335 @@
     ],
     [
         'label' => 'Home',
-        'url' => 'tut_PHP.php'
+        'url' => '../php.php'
     ], 
     [
         'label' => 'Introducere',
-        'url' => 'introducere.php'
+        'url' => '../php_Docs/introducere.php'
     ],
     [
         'label' => 'Instalare PHP',
-        'url' => 'instalarePHP.php'
+        'url' => '../php_Docs/instalarePHP.php'
     ],
     [
         'label' => 'Sintaxă',
-        'url' => 'sintaxa.php'
+        'url' => '../php_Docs/sintaxa.php'
     ],
     [
         'label' => 'Comentarii',
-        'url' => 'comentarii.php'
+          'url' => '../php_Docs/comentarii.php'
     ],
     [
         'label' => 'Variabile',
-        'url' => 'variabile.php',
+         'url' => '../php_Docs/variabile.php',
     ],
     [
         'label' => 'Domeniul variabilelor',
-        'url' => 'domeniulVariabilelor.php',
+         'url' => '../php_Docs/domeniulVariabilelor.php',
     ],
     [
         'label' => 'Echo / Print',
-        'url' => 'echo&print.php',
+         'url' => '../php_Docs/echo&print.php',
     ],
     [
         'label' => 'Tipuri de date',
-        'url' => 'tipuriDate.php',
+         'url' => '../php_Docs/tipuriDate.php',
     ],
     [
         'label' => 'Constante',
-        'url' => 'constante.php',
+         'url' => '../php_Docs/constante.php',
     ],
     [
         'label' => 'Operatori',
-        'url' => 'operatori.php',
+         'url' => '../php_Docs/operatori.php',
     ],
     [
         'label' => 'If else',
-        'url' => 'ifElse.php',
+         'url' => '../php_Docs/ifElse.php',
     ],
     [
         'label' => 'Switch',
-        'url' => 'switch.php',
+         'url' => '../php_Docs/switch.php',
     ],
     [
         'label' => 'Structuri Repetitive',
-        'url' => 'structuriRepetitive.php',
+         'url' => '../php_Docs/structuriRepetitive.php',
         'sub_menu' => [
             [
                 'label' => 'While',
-                'url' => 'while.php'
+                 'url' => '../php_Docs/while.php'
             ],
             [
                 'label' => 'Do While',
-                'url' => 'doWhile.php'
+                 'url' => '../php_Docs/doWhile.php'
             ],
             [
                 'label' => 'For',
-                'url' => 'for.php'
+                 'url' => '../php_Docs/for.php'
             ],
             [
                 'label' => 'Foreach',
-                'url' => 'foreach.php'
+                 'url' => '../php_Docs/foreach.php'
             ],
             [
                 'label' => 'Break / Continue',
-                'url' => 'break&continue.php'
+                 'url' => '../php_Docs/break&continue.php'
             ]
         ]
     ],
     [
         'label' => 'Funcții',
-        'url' => 'functii.php',
+         'url' => '../php_Docs/functii.php',
     ],
     [
         'label' => 'Array-uri',     
-        'url' => 'array.php',
+         'url' => '../php_Docs/array.php',
         'sub_menu' => [
             [
                 'label' => 'Array Indexat',
-                'url' => 'arrayIndexat.php'
+                 'url' => '../php_Docs/arrayIndexat.php'
             ],
             [
                 'label' => 'Array Asociativ',
-                'url' => 'arrayAsociativ.php'
+                 'url' => '../php_Docs/arrayAsociativ.php'
             ],
             [
                 'label' => 'Array Multidimensional',
-                'url' => 'arrayMultidimensional.php'
+                 'url' => '../php_Docs/arrayMultidimensional.php'
             ],
             [
                 'label' => 'Sortare Array-uri',
-                'url' => 'sortareArray.php'
+                 'url' => '../php_Docs/sortareArray.php'
             ],
             [
                 'label' => 'Funcții Array-uri',
-                'url' => 'functiiArray.php'
+                 'url' => '../php_Docs/functiiArray.php'
             ]
         ]
     ],
     [
         'label' => 'Superglobals',     
-        'url' => 'superglobals.php',
+         'url' => '../php_Docs/superglobals.php',
         'sub_menu' => [
             [
                 'label' => '$GLOBALS',
-                'url' => 'superglobals_globals.php'
+                 'url' => '../php_Docs/superglobals_globals.php'
             ],
             [
                 'label' => '$_SERVER',
-                'url' => 'superglobals_server.php'
+                 'url' => '../php_Docs/superglobals_server.php'
             ],
             [
                 'label' => '$_REQUEST',
-                'url' => 'superglobals_request.php'
+                 'url' => '../php_Docs/superglobals_request.php'
             ],
             [
                 'label' => '$_POST',
-                'url' => 'superglobals_post.php'
+                 'url' => '../php_Docs/superglobals_post.php'
             ],
             [
                 'label' => '$_GET',
-                'url' => 'superglobals_get.php'
+                 'url' => '../php_Docs/superglobals_get.php'
             ]
         ]
     ],
     [
         'label' => 'String',     
-        'url' => 'string.php',
+         'url' => '../php_Docs/string.php',
         'sub_menu' => [
             [
                 'label' => 'Funcții string-uri',
-                'url' => 'functiiStringuri.php'
+                 'url' => '../php_Docs/functiiStringuri.php'
             ],
         ]
     ],
     [
         'label' => 'RegEx',     
-        'url' => 'regex.php',
+         'url' => '../php_Docs/regex.php',
     ],
     [
         'label' => 'Manipulare Formulare',
-        'url' => 'manipulareFormulare.php'
+         'url' => '../php_Docs/manipulareFormulare.php'
     ],
     [
         'label' => 'Validare Formulare',
-        'url' => 'validareFormulare.php'
+         'url' => '../php_Docs/validareFormulare.php'
     ],
     [
         'label' => 'Avansat PHP',
-        'url' => 'chapterTitle'
+         'url' => 'chapterTitle'
     ],
     [
         'label' => 'Dată și oră',
-        'url' => 'dataSiOra.php'
+         'url' => '../php_Docs/dataSiOra.php'
     ],
     [
         'label' => 'Includere Fișiere',
-        'url' => 'includereFisiere.php'
+         'url' => '../php_Docs/includereFisiere.php'
     ],
     [
         'label' => 'Manipulare Fișiere',
-        'url' => 'manipulareFisiere.php'
+         'url' => '../php_Docs/manipulareFisiere.php'
     ],
     [
         'label' => 'Deschidere Fișiere',
-        'url' => 'deschidereFisiere.php'
+         'url' => '../php_Docs/deschidereFisiere.php'
     ],
     [
         'label' => 'Citire Fișiere',
-        'url' => 'citireFisiere.php'
+         'url' => '../php_Docs/citireFisiere.php'
     ],
     [
         'label' => 'Scriere Fișiere',
-        'url' => 'scriereFisiere.php'
+         'url' => '../php_Docs/scriereFisiere.php'
     ],
     [
         'label' => 'Ștergere Fișiere',
-        'url' => 'stergereFisiere.php'
+         'url' => '../php_Docs/stergereFisiere.php'
     ],
     [
         'label' => 'Încărcare de Fișiere',
-        'url' => 'incarcareFisiere.php'
+         'url' => '../php_Docs/incarcareFisiere.php'
     ],
     [
         'label' => 'Cookie',
-        'url' => 'cookie.php'
+         'url' => '../php_Docs/cookie.php'
     ],
     [
         'label' => 'Session',
-        'url' => 'session.php'
+         'url' => '../php_Docs/session.php'
     ],
     [
         'label' => 'Filtrare',
-        'url' => 'filtrare.php'
+         'url' => '../php_Docs/filtrare.php'
     ],
     [
         'label' => 'Filtrare Avansată',
-        'url' => 'filtrareAvansata.php'
+         'url' => '../php_Docs/filtrareAvansata.php'
     ],
     [
         'label' => 'JSON',
-        'url' => 'json.php'
+         'url' => '../php_Docs/json.php'
     ],
     [
         'label' => 'Excepții',
-        'url' => 'exceptii.php'
+         'url' => '../php_Docs/exceptii.php'
     ],
     [
         'label' => 'OOP PHP',
-        'url' => 'chapterTitle'
+         'url' => 'chapterTitle'
     ],
     [
         'label' => 'Concepte OOP',
-        'url' => 'concepteOOP.php'
+         'url' => '../php_Docs/concepteOOP.php'
     ],
     [
         'label' => 'Clase/Obiecte',
-        'url' => 'clase&obiecte.php'
+         'url' => '../php_Docs/clase&obiecte.php'
     ],
     [
         'label' => 'Constructor/Destructor',
-        'url' => 'constructor&Destructor.php'
+         'url' => '../php_Docs/constructor&Destructor.php'
     ],
     [
         'label' => 'Specificatori de access',
-        'url' => 'specificatoriAcces.php'
+         'url' => '../php_Docs/specificatoriAcces.php'
     ],
     [
-        'label' => 'Mostenire',
-        'url' => 'mostenire.php'
+        'label' => 'Moștenire',
+         'url' => '../php_Docs/mostenire.php'
     ],
     [
         'label' => 'Constante de clasă',
-        'url' => 'constanteClasa.php'
+         'url' => '../php_Docs/constanteClasa.php'
     ],
     [
         'label' => 'Clase Abstracte',
-        'url' => 'claseAbstracte.php'
+         'url' => '../php_Docs/claseAbstracte.php'
     ],
     [
         'label' => 'Interfață',
-        'url' => 'interfata.php'
+         'url' => '../php_Docs/interfata.php'
     ],
     [
-        'label' => 'Traits / Trasaturi',
-        'url' => 'traitsOOP.php'
+        'label' => 'Traits / Trăsături',
+         'url' => '../php_Docs/traitsOOP.php'
     ],
     [
         'label' => 'Metode Statice',
-        'url' => 'metodeStatice.php'
+         'url' => '../php_Docs/metodeStatice.php'
     ],
     [
         'label' => 'Proprietăți Statice',
-        'url' => 'proprietatiStatice.php'
+         'url' => '../php_Docs/proprietatiStatice.php'
     ],
     [
         'label' => 'Namespaces',
-        'url' => 'namespaces.php'
+         'url' => '../php_Docs/namespaces.php'
     ],
     [
         'label' => 'Iterabili',
-        'url' => 'iterables.php'
+         'url' => '../php_Docs/iterables.php'
     ],
     [
         'label' => 'MySQL DB',
-        'url' => 'chapterTitle'
+         'url' => 'chapterTitle'
     ],
     [
         'label' => 'Bază de Date',
-        'url' => 'bazaDeDate.php'
+         'url' => '../php_Docs/bazaDeDate.php'
     ],
     [
         'label' => 'Conectare DB',
-        'url' => 'conectareDB.php'
+         'url' => '../php_Docs/conectareDB.php'
     ],
     [
         'label' => 'Creare DB',
-        'url' => 'creareDB.php'
+         'url' => '../php_Docs/creareDB.php'
     ],
     [
         'label' => 'Creare Tabel',
-        'url' => 'creareTabel.php'
+         'url' => '../php_Docs/creareTabel.php'
     ],
     [
         'label' => 'Inserare Date Tabel',
-        'url' => 'inserareTabel.php'
+         'url' => '../php_Docs/inserareTabel.php'
     ],
     [
-        'label' => 'Obtine ultimul Id',
-        'url' => 'obtineUltimulId.php'
+        'label' => 'Obține ultimul Id',
+         'url' => '../php_Docs/obtineUltimulId.php'
     ],
     [
-        'label' => 'Inserare Multipla',
-        'url' => 'inserareMultipla.php'
+        'label' => 'Inserare Multiplă',
+         'url' => '../php_Docs/inserareMultipla.php'
     ],
     [
         'label' => 'Declarații Pregătite',
-        'url' => 'declaratiiPregatite.php'
+         'url' => '../php_Docs/declaratiiPregatite.php'
     ],
     [
         'label' => 'Selectare Date',
-        'url' => 'selectareDate.php'
+         'url' => '../php_Docs/selectareDate.php'
     ],
     [
         'label' => 'Clauza Where',
-        'url' => 'clauzaWhere.php'
+         'url' => '../php_Docs/clauzaWhere.php'
     ],
     [
         'label' => 'Clauza Order By',
-        'url' => 'clauzaOrderBy.php'
+         'url' => '../php_Docs/clauzaOrderBy.php'
     ],
     [
         'label' => 'Declarația Delete',
-        'url' => 'declaratiaDelete.php'
+         'url' => '../php_Docs/declaratiaDelete.php'
     ],
     [
         'label' => 'Declarația Update',
-        'url' => 'declaratiaUpdate.php'
+         'url' => '../php_Docs/declaratiaUpdate.php'
     ],
     [
         'label' => 'Limitare Date',
-        'url' => 'limitareDate.php'
-    ],
-    [
-        'label' => 'Diverse',
-        'url' => 'chapterTitle'
-    ],
-    [
-        'label' => 'Products',     
-        'url' => '#',
-        'sub_menu' => [
-            [
-                'label' => 'Product 1',
-                'url' => '#.'
-            ],
-            [
-                'label' => 'Product 2',
-                'url' => '#'
-            ],
-            [
-                'label' => 'Product 3',
-                'url' => '#'
-            ]
-        ]
-    ],
-    [
-        'label' => 'Services',
-        'url' => '#',
-        'sub_menu' => [
-            [
-                'label' => 'Service 1',
-                'url' => '#'
-            ],
-            [
-                'label' => 'Service 2',
-                'url' => '#'
-            ],
-            [
-                'label' => 'Service 3',
-                'url' => '#'
-            ]
-        ]
-    ],
-    [
-        'label' => 'Contact',
-        'url' => '/contact'
+         'url' => '../php_Docs/limitareDate.php'
     ],
 ];
 ?>

@@ -7,12 +7,14 @@
 
   Fisierul next_previous_buttons.css este folosit exclusiv pentru stilizarea butoanelor, odata modificat acolo se vor propaga in toate cazurile folosite
  -->
-<link rel="stylesheet" href="next_previous_buttons.css" type="text/css">
+<link rel="stylesheet" href='../next_previous_buttons.css' type="text/css">
 
 <?php
-  include 'sidenavbarArray.php';
+  include('sidenavbarArray.php');
+
   $current_url = $_SERVER['REQUEST_URI'];
-  $current_url_substring = substr($current_url, 1);
+  $current_url_substring = '../' .$current_url_substring; 
+
   $prev_page = '';
   $next_page = '';
   
@@ -32,11 +34,11 @@
   }
 
   if ($prev_page != null) {
-    echo '<a class="next-previous-button" href="' . $prev_page['url'] . '"><img class="left-arrow" src="images/next-previous-arrow.png">' . $prev_page['label'] . '</a>';
+    echo '<a class="next-previous-button" href="' . $prev_page['url'] . '"><img class="left-arrow" src="../images/next-previous-arrow.png">' . $prev_page['label'] . '</a>';
   }
 
   if ($next_page) {
-    echo '<a class="next-previous-button" href="' . $next_page['url'] . '">' . $next_page['label'] . '<img class="right-arrow" src="images/next-previous-arrow.png"></a>';
+    echo '<a class="next-previous-button" href="' . $next_page['url'] . '">' . $next_page['label'] . '<img class="right-arrow" src="../images/next-previous-arrow.png"></a>';
   }
 
   // Funcție pentru liniarizarea array-ului multidimensional - aceasta functie a fost folosita pentru a aduce toate elementele pe acelasi nivel
