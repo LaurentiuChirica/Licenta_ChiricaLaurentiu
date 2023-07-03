@@ -24,7 +24,7 @@
     Ex de folosiri: introducere.php, variabile.php etc.
 -->
 
-<link rel="stylesheet" href="sidenavbar.css" type="text/css">
+<link rel="stylesheet" href='../sidenavbar.css' type="text/css">
 
 <nav class="navigation">
     <ul class="mainmenu">
@@ -34,11 +34,11 @@
         // $current_url - url-ul curent pe care suntem*pagina*
         $current_url = $_SERVER['REQUEST_URI'];
         $current_url_substring = substr($current_url, 1);
-        
         // iteram prin $menu_item si generam cu echo meniul
         foreach ($menu_items as $item) {
+
             echo '<li>';
-            if( $current_url_substring == $item['url']) {
+            if( '../' . $current_url_substring == $item['url']) {
                 // aici aplicam clasa css de "active-item" daca url-ul pe care suntem coincide cu cel din elementul iterat la acest moment
                 // class css "active-item" face ca elementul din meniu sa fie evidentiat cu o culoare mai inchisa pentru a putea vedea usor pe ce pagina sutem
                 echo '<a class="active-item" href="' . $item['url'] . '">' . $item['label'] . '</a>';
