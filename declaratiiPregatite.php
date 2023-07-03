@@ -77,34 +77,52 @@
             <span class="php-syntax-code">}</span>
 
             <span class="php-syntax-code"></span>
+
+            <span class="php-syntax-code">// pregătirea și legarea</span>
+
+            <span class="php-syntax-code">$stmt = $conn->prepare("INSERT INTO Student (prenume, nume, email) VALUES (?, ?, ?)");</span>
+
+            <span class="php-syntax-code">$stmt->bind_param("sss", $prenume, $nume, $email);</span>
+
+            <span class="php-syntax-code"></span>
+
+            <span class="php-syntax-code">// setați parametrii și executați</span>
+
+            <span class="php-syntax-code">$prenume = "John";</span>
+
+            <span class="php-syntax-code">$nume = "Doe";</span>
+
+            <span class="php-syntax-code">$email = "john@example.com";</span>
+
+            <span class="php-syntax-code">$stmt->execute();</span>
+
+            <span class="php-syntax-code"></span>
+
+            <span class="php-syntax-code">$firstname = "Trevor";</span>
+
+            <span class="php-syntax-code">$lastname = "Davis";</span>
+
+            <span class="php-syntax-code">$email = "trevor@example.com";</span>
+
+            <span class="php-syntax-code">$stmt->execute();</span>
+
+            <span class="php-syntax-code"></span>
+
+            <span class="php-syntax-code">$firstname = "Michael";</span>
+
+            <span class="php-syntax-code">$lastname = "Anderson";</span>
+
+            <span class="php-syntax-code">$email = "michael@example.com";</span>
+
+            <span class="php-syntax-code">$stmt->execute();</span>
+
+            <span class="php-syntax-code"></span>
             
-            <span class="php-syntax-code">$sql = "INSERT INTO Student (prenume, nume, email)</span>
-
-            <span class="php-syntax-code">&nbsp;VALUES ('John', 'Doe', 'john@example.com')";</span>
+            <span class="php-syntax-code">echo "Noi înregistrări create cu succes";</span>
 
             <span class="php-syntax-code"></span>
 
-            <span class="php-syntax-code">$sql .= "INSERT INTO Student (prenume, nume, email)</span>
-
-            <span class="php-syntax-code">&nbsp;VALUES ('Trevor', 'Anderson', 'trevor@example.com')";</span>
-
-            <span class="php-syntax-code"></span>
-
-            <span class="php-syntax-code">$sql .= "INSERT INTO Student (prenume, nume, email)</span>
-
-            <span class="php-syntax-code">&nbsp;VALUES ('Michael', 'Davis', 'michael@example.com')";</span>
-
-            <span class="php-syntax-code"></span>
-
-            <span class="php-syntax-code">&nbsp;if ($conn->query($sql) === TRUE) {</span>
-
-            <span class="php-syntax-code">&nbsp;&nbsp;echo "Înregistrări noi create cu succes";</span>
-
-            <span class="php-syntax-code">&nbsp;} else {</span>
-
-            <span class="php-syntax-code">&nbsp;&nbsp;echo "Eroare: " . $sql . " " . $conn->error;</span>
-
-            <span class="php-syntax-code">&nbsp;}</span>
+            <span class="php-syntax-code">$stmt->close();</span>
 
             <span class="php-syntax-code">$conn->close();</span>
 
@@ -112,6 +130,28 @@
           </div>
           
           <br>
+
+          <h2>Explicatii</h2>
+
+          <div class="static-code-example">
+            <span class="php-syntax-code">"INSERT INTO Student (prenume, nume, email) VALUES (?, ?, ?)"</span>
+
+            <span class="php-syntax-code">$stmt->bind_param("sss", $prenume, $nume, $email);</span>
+          </div>
+
+          <p class="info-content">În cazul în care dorim să înlocuim o valoare întreagă, text, dublă sau blob în SQL, introducem în schimb un semn de întrebare (?).</p>
+
+          <p class="info-content">Funcția bind_param() notifică baza de date cu privire la parametri și îi leagă de interogarea SQL. Categoriile de date ale parametrilor sunt enumerate în argumentul "sss". Mysql este informat că parametrul este un șir de caractere prin caracterul s.</p>
+
+          <p class="info-content">Există patru forme posibile de argumente:</p>
+
+          <li class="info-content">i - număr întreg</li>
+
+          <li class="info-content">d - dublu</li>
+
+          <li class="info-content">s - șir de caractere</li>
+
+          <li class="info-content">b - BLOB</li>
 
           <h2>Exemplu PDO</h2>
 
@@ -140,35 +180,55 @@
 
             <span class="php-syntax-code"></span>
 
-            <span class="php-syntax-code">&nbsp;// Inceperea tranzactiei</span>
+            <span class="php-syntax-code">&nbsp;// pregătiți sql și legați parametrii</span>
 
-            <span class="php-syntax-code">&nbsp;$conn->beginTransaction();</span>
+            <span class="php-syntax-code">&nbsp;$stmt = $conn->prepare("INSERT INTO Student (prenume, nume, email)</span>
 
-            <span class="php-syntax-code"></span>
+            <span class="php-syntax-code">&nbsp;VALUES (:prenume, :nume, :email)");</span>
 
-            <span class="php-syntax-code">&nbsp;// Declaratiile SQL</span>
+            <span class="php-syntax-code">&nbsp;$stmt->bindParam(':prenume', $prenume);</span>
 
-            <span class="php-syntax-code">&nbsp;$conn->exec("INSERT INTO Student (nume, prenume, email)</span>
+            <span class="php-syntax-code">&nbsp;$stmt->bindParam(':nume', $nume);</span>
 
-            <span class="php-syntax-code">&nbsp;VALUES ('John', 'Doe', 'john@example.com')");</span>
-
-            <span class="php-syntax-code"></span>
-
-            <span class="php-syntax-code">&nbsp;$conn->exec("INSERT INTO Student (nume, prenume, email)</span>
-
-            <span class="php-syntax-code">&nbsp;VALUES ('Trevor', 'Anderson', 'trevor@example.com')");</span>
-
-            <span class="php-syntax-code"></span>
-            
-            <span class="php-syntax-code">&nbsp;$conn->exec("INSERT INTO Student (nume, prenume, email)</span>
-
-            <span class="php-syntax-code">&nbsp;VALUES ('Michael', 'Davis', 'michael@example.com')");</span>
+            <span class="php-syntax-code">&nbsp;$stmt->bindParam(':email', $email);</span>
 
             <span class="php-syntax-code"></span>
 
-            <span class="php-syntax-code">&nbsp;// confirmă tranzacția</span>
+            <span class="php-syntax-code">&nbsp;// inserați un rând</span>
 
-            <span class="php-syntax-code">&nbsp;$conn->commit();</span>
+            <span class="php-syntax-code">&nbsp;$prenume = "John";</span>
+
+            <span class="php-syntax-code">&nbsp;$nume = "Doe";</span>
+
+            <span class="php-syntax-code">&nbsp;$email = "john@example.com";</span>
+
+            <span class="php-syntax-code">&nbsp;$stmt->execute();</span>
+
+            <span class="php-syntax-code">&nbsp;// inserați un alt rând</span>
+
+            <span class="php-syntax-code"></span>
+
+            <span class="php-syntax-code">&nbsp;$prenume = "Mary";</span>
+
+            <span class="php-syntax-code">&nbsp;$nume = "Moe";</span>
+
+            <span class="php-syntax-code">&nbsp;$email = "mary@example.com";</span>
+
+            <span class="php-syntax-code">&nbsp;$stmt->execute();</span>
+
+            <span class="php-syntax-code"></span>
+
+            <span class="php-syntax-code">&nbsp;// inserați un alt rând</span>
+
+            <span class="php-syntax-code">&nbsp;$prenume = "Julie";</span>
+
+            <span class="php-syntax-code">&nbsp;$nume = "Dooley";</span>
+
+            <span class="php-syntax-code">&nbsp;$email = "julie@example.com";</span>
+
+            <span class="php-syntax-code">&nbsp;$stmt->execute();</span>
+
+            <span class="php-syntax-code"></span>
 
             <span class="php-syntax-code">&nbsp;echo "Noi înregistrări create cu succes";</span>
 
@@ -176,11 +236,7 @@
 
             <span class="php-syntax-code">} catch(PDOException $e) {</span>
 
-            <span class="php-syntax-code">&nbsp;// întoarce tranzacția dacă ceva a eșuat</span>
-
-            <span class="php-syntax-code">&nbsp;$conn->rollback();</span>
-
-            <span class="php-syntax-code">&nbsp;echo $sql . " " . $e->getMessage();</span>
+            <span class="php-syntax-code">&nbsp;echo "Eroare: " . $e->getMessage();</span>
 
             <span class="php-syntax-code">}</span>
 
