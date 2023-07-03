@@ -7,19 +7,19 @@
   <link href="reusable_tut_php.css" rel="stylesheet" />
 </head>
 
-<?php include("header.php"); ?>
+<?php include(".../header.php"); ?>
 
 <body>
   <div class="main-content">
     <div class="side-navbar-container">
-      <?php include('sidenavbar.php'); ?>
+      <?php include('.../sidenavbar.php'); ?>
     </div>
 
     <div class="main-content-container">
       <div class="presentation-title">Do while</div>
 
       <div class="next-previous-buttons-container">
-        <?php include("next_previous_buttons.php"); ?>
+        <?php include(".../next_previous_buttons.php"); ?>
       </div>
 
       <div class="info-container">
@@ -131,6 +131,6 @@
   </div>
 </body>
 
-<?php include("footer.php"); ?>
+<?php include(".../footer.php"); ?>
 
 </html>
