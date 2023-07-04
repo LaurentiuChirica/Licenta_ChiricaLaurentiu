@@ -366,5 +366,17 @@
         'label' => 'Limitare Date',
          'url' => '../php_Docs/limitareDate.php'
     ],
+    [
+        'label' => 'Diverse',
+        'url' => 'chapterTitle'
+    ],
+    [
+        'label' => 'Standard Codare',
+         'url' => '../php_Docs/standardCodare.php'
+    ],
+    [
+        'label' => 'Compilator cu Eval()',
+         'url' => '../php_Docs/compilatorEval.php'
+    ],
 ];
 ?>

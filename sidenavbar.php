@@ -1,8 +1,8 @@
 <!-- 
-    Logica unde generam meniul lateral folosint array-ul $menu_items din fisierul sidenavbarArray.php
+    Logica unde generam meniul lateral folosind array-ul $menu_items din fisierul sidenavbarArray.php
     Fisierul sidenavbar.css - pentru stilizare a meniului exclusiv.
     
-    Structura html:
+    Structura HTML:
     <nav class="navigation">
         <ul class="mainmenu">
             <li>
@@ -18,43 +18,52 @@
         </ul>
     </nav>
     
-    Cum il importam in alte pagini html?
-      R: Deschideti tag-ul de php si folositi: include('sidenavbar.php');
+    Cum il importam in alte pagini HTML?
+      R: Deschideti tag-ul de PHP si folositi: include('sidenavbar.php');
     
-    Ex de folosiri: introducere.php, variabile.php etc.
+    Exemplu de folosiri: introducere.php, variabile.php etc.
 -->
 
-<link rel="stylesheet" href='../sidenavbar.css' type="text/css">
+<link rel="stylesheet" href="../sidenavbar.css" type="text/css">
 
 <nav class="navigation">
     <ul class="mainmenu">
         <!-- La linia 11 includem fisierul sidenavbarArray.php pentru a putea accesa array-ul $menu_items -->
         <?php
         include 'sidenavbarArray.php'; 
-        // $current_url - url-ul curent pe care suntem*pagina*
         $current_url = $_SERVER['REQUEST_URI'];
         $current_url_substring = substr($current_url, 1);
-        // iteram prin $menu_item si generam cu echo meniul
-        foreach ($menu_items as $item) {
-
+        $current_item_id = 'scrollId'; // Variabilă pentru a stoca ID-ul elementului curent
+        $index = 0; // Variable to store the index of the current item
+        
+        // Iterate through $menu_items and generate the menu
+        foreach ($menu_items as $key => $item) {
             echo '<li>';
+            
             if( '../' . $current_url_substring == $item['url']) {
-                // aici aplicam clasa css de "active-item" daca url-ul pe care suntem coincide cu cel din elementul iterat la acest moment
-                // class css "active-item" face ca elementul din meniu sa fie evidentiat cu o culoare mai inchisa pentru a putea vedea usor pe ce pagina sutem
-                echo '<a class="active-item" href="' . $item['url'] . '">' . $item['label'] . '</a>';
-            } else if($item['url'] === 'chapterTitle'){
-                // Aceasta clasa de chapter title se aplica doar pentru elementele ce ar trebui sa fie titlu de capitol
-                // Elementele din meniu care se vor vrea sa fie titlu de capitol o sa aiba url-ul de chapterTitle
+                // Apply the "active-item" CSS class if the current URL matches the item URL
+                echo '<a class="active-item" href="' . $item['url'] . '" id="' . $current_item_id . '">' . $item['label'] . '</a>';
+            } else if ($item['url'] === 'chapterTitle') {
+                // Apply the "chapter-title" CSS class for chapter title items
                 echo '<a class="chapter-title" href="' . $item['url'] . '">' . $item['label'] . '</a>';
             } else {
-                // Daca nu suntem pe acel url, nu se aplica clasa css
-                echo '<a class href="' . $item['url'] . '">' . $item['label'] . '</a>';
+                // If not on the current URL, do not apply a CSS class
+                echo '<a href="' . $item['url'] . '">' . $item['label'] . '</a>';
             }
-            if (isset($item['sub_menu'])) { // aici verificam daca elementul din array contine "sub_menu" si daca da, iteram prin el si-l generam
+            
+            if (isset($item['sub_menu'])) {
+                // Check if the item has a sub-menu, and if so, iterate through it and generate it
                 echo '<ul class="submenu">';
                 foreach ($item['sub_menu'] as $sub_item) {
                     echo '<li>';
+                    if( '../' . $current_url_substring == $sub_item['url']) {
+                        echo '<a class="active-item" href="' . $sub_item['url'] . '" id="' . $current_item_id . '">' . $sub_item['label'] . '</a>';
+                        // echo '<a class="active-item" href="' . $sub_item['url'] . '">' . $sub_item['label'] . '</a>';
+
+                    } else {
                     echo '<a href="' . $sub_item['url'] . '">' . $sub_item['label'] . '</a>';
+
+                    }
                     echo '</li>';
                 }
                 echo '</ul>';
@@ -64,3 +73,20 @@
         ?>
     </ul>
 </nav>
+
+<script>
+// Use JavaScript to scroll to the current item based on its ID
+document.addEventListener('DOMContentLoaded', function() {
+    var currentItem = document.getElementById("<?php echo $current_item_id; ?>");
+    if (currentItem) {
+        currentItem.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'center' 
+        });
+    } else {
+        // If the current item ID is not found, scroll to the top of the sidebar
+        document.querySelector('.mainmenu').scrollTop = 0;
+    }
+});
+</script>

@@ -70,3 +70,8 @@
   pointer-events: none;
   font-size: 1.35rem !important;
 }
+
+.submenu:has(.active-item) {
+    display: block;
+    max-height: 300px;
+}
